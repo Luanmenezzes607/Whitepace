@@ -15,6 +15,7 @@ body{
 
 section, footer{
     padding: 54px 0px;
+
 }
 
 h3{
@@ -26,7 +27,7 @@ p{
 }
 
 .container{
-    max-width: 1400px;
+    max-width: 1100px;
     margin: 0px auto;
 }
 
@@ -52,10 +53,24 @@ nav ul{
     gap: 50px; 
 }
 
-nav ul li a{
+nav ul a{
     color: #fff;
     text-transform: uppercase;
     font-size: 14px;
+}
+
+nav ul a:not(.btn)::after{
+    content: "";
+    background-color: red;
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after{
+    width: 100%;
+    margin: 0px auto;
 }
 
 .btn{
@@ -95,6 +110,102 @@ nav ul li a{
     color: white;
     padding: 10px 0px 30px 0px;
 }
+
+.sec-two{
+    background-color: #fff;
+}
+
+.sec-two .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec-two .container .sec-two-text h3{
+    font-size: 56px;
+}
+
+.sec-two .container .sec-two-text p{
+    margin: 10px 0px 30px 0px;
+}
+
+.sec-tree{
+    background-color: #fff;
+}
+
+.sec-tree .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec-tree .container .sec-tree-text h3{
+    font-size: 56px;
+}
+
+.sec-tree .container .sec-tree-text p{
+    margin: 10px 0px 30px 0px;
+}
+
+.sec-tree .container .sec-tree-img{
+    width: 100%;
+}
+
+.sec-for{
+    background-color: white;
+    text-align: center;
+}
+.sec-for .container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.sec-for img{
+    width: 60px;
+    border-radius: 100%;
+}
+
+.sec-for .container .card-itens{
+    background-color: #D1E6F6;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sec-for .container .card-itens p{
+    padding: 15px 0px ;
+}
+
+.sec-five{
+    background-color: white;
+}
+
+.sec-five .container h3, p{
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.sec-five .container div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.sec-six{
+    background-color: white;
+}
+
+.sec-six .container{
+    display: flex;
+}
+
+footer {    
+    height: 100px;
+}
+
+
 
 
 
